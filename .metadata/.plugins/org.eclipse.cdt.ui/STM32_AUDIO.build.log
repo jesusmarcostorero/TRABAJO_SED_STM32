@@ -1,0 +1,20 @@
+12:07:00 **** Incremental Build of configuration Debug for project STM32_AUDIO ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_AUDIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_AUDIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_AUDIO.elf
+ 
+arm-none-eabi-size   STM32_AUDIO.elf 
+arm-none-eabi-objdump -h -S  STM32_AUDIO.elf  > "STM32_AUDIO.list"
+arm-none-eabi-objcopy  -O binary  STM32_AUDIO.elf  "STM32_AUDIO.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12468	     20	   1956	  14444	   386c	STM32_AUDIO.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32_AUDIO.bin
+ 
+Finished building: STM32_AUDIO.list
+ 
+
+12:07:02 Build Finished. 0 errors, 0 warnings. (took 2s.5ms)
+

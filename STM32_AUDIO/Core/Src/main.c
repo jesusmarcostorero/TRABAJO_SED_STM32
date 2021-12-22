@@ -52,6 +52,20 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_I2S2_Init(void);
+
+uint16_t bufferTx[8];
+uint16_t bufferRx[8];
+
+//variables para filtros
+
+//canal L
+float l_a0, l_a1, l_a2, l_b1, l_b2; //constantes del filtro
+float lin_z0, lin_z1, lin_z2, lout_z0, lout_z1, lout_z2; //muestras para el filtro
+
+//canal R
+float r_a0, r_a1, r_a2, r_b1, r_b2; //constantes del filtro
+float rin_z0, rin_z1, rin_z2, rout_z0, rout_z1, rout_z2; //muestras para el filtro
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -91,6 +105,9 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_I2S2_Init();
+
+  //el DMA empieza a transmitir y recibir datos de 4 en 4 bytes
+  HAL_I2SEx_TransmitReceive(&hi2s2, bufferTx, bufferRx, 4, HAL_MAX_DELAY);
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -167,7 +184,7 @@ static void MX_I2S2_Init(void)
   hi2s2.Instance = SPI2;
   hi2s2.Init.Mode = I2S_MODE_MASTER_TX;
   hi2s2.Init.Standard = I2S_STANDARD_PHILIPS;
-  hi2s2.Init.DataFormat = I2S_DATAFORMAT_32B;
+  hi2s2.Init.DataFormat = I2S_DATAFORMAT_24B;
   hi2s2.Init.MCLKOutput = I2S_MCLKOUTPUT_DISABLE;
   hi2s2.Init.AudioFreq = I2S_AUDIOFREQ_96K;
   hi2s2.Init.CPOL = I2S_CPOL_LOW;
