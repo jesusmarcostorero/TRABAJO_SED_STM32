@@ -827,3 +827,843 @@
 2021-12-22 11:13:22,451 [INFO] ProjectBuilder:2817 - Suppression de : usb_host.c
 2021-12-22 11:13:22,452 [INFO] ProjectBuilder:2817 - Suppression de : usbh_conf.c
 2021-12-22 11:13:22,453 [INFO] ProjectBuilder:2817 - Suppression de : usbh_platform.c
+2021-12-22 11:30:14,878 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 11:30:14,879 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 11:30:14,880 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 11:30:32,709 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 11:30:32,777 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 11:33:20,075 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 351694296 Bytes (836763648)
+2021-12-22 11:33:21,535 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 393518440 Bytes (836763648)
+2021-12-22 11:33:25,133 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 446980968 Bytes (836763648)
+2021-12-22 11:33:25,811 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 11:33:25,811 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 11:33:25,811 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 11:33:25,811 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 11:33:25,811 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 11:33:25,812 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 11:33:25,813 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 11:33:25,829 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 11:33:25,829 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 11:33:25,829 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 11:33:25,829 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 11:33:25,829 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 11:33:25,829 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 11:33:25,830 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 11:33:25,830 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 11:33:25,830 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 11:33:25,830 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 11:33:25,830 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 11:33:25,830 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 11:33:25,830 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 11:33:25,830 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 11:33:25,830 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 11:33:25,830 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 11:33:25,831 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 11:33:25,831 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 11:33:25,831 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 11:33:25,831 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : FIFOThresholdvalue: null
+2021-12-22 11:33:25,831 [INFO] Argument:304 - Argument : FIFOThresholdvalue: null
+2021-12-22 11:33:25,831 [INFO] Argument:294 - Argument : MemBurstvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:304 - Argument : MemBurstvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:294 - Argument : PeriphBurstvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:304 - Argument : PeriphBurstvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 11:33:25,832 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 11:33:25,833 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 11:33:25,835 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 11:33:25,835 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 11:33:25,835 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 11:33:25,835 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 11:33:25,835 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 11:33:25,836 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 11:33:25,836 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 11:33:25,836 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 11:33:25,836 [INFO] Argument:294 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 11:33:25,836 [INFO] Argument:304 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 11:33:25,836 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 11:33:25,836 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 11:33:25,836 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 11:33:25,836 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 11:33:25,836 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 11:33:25,836 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 11:33:25,837 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 11:33:25,837 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 11:33:25,837 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 11:33:25,837 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 11:33:25,837 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 11:33:25,837 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 11:33:25,837 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 11:33:25,837 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 11:33:25,837 [INFO] Argument:294 - Argument : FIFOThresholdvalue: null
+2021-12-22 11:33:25,837 [INFO] Argument:304 - Argument : FIFOThresholdvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : MemBurstvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:304 - Argument : MemBurstvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : PeriphBurstvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:304 - Argument : PeriphBurstvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 11:33:25,838 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 11:33:25,839 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 11:33:26,420 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 11:33:26,519 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 11:33:26,549 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 11:33:26,663 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 11:33:26,954 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 11:33:27,047 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 11:33:27,054 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 11:33:27,354 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 11:33:27,397 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 11:33:27,542 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 11:33:27,556 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 11:33:27,668 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 11:33:27,697 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 11:33:27,863 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 11:33:27,869 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 11:33:27,961 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 11:33:27,986 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 11:33:28,129 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 11:33:28,218 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 11:33:28,337 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 11:33:28,352 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 11:33:28,549 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 11:33:30,103 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 413mS.
+2021-12-22 11:33:30,107 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 11:33:31,105 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 11:33:33,937 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 3830mS.
+2021-12-22 11:33:33,939 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 11:33:33,948 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 13:58:14,923 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 13:58:14,924 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 13:58:14,925 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 13:58:17,507 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 13:58:17,507 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 13:58:17,509 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 13:58:17,896 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 13:58:17,896 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 13:58:17,898 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 13:58:18,090 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 13:58:18,091 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 13:58:18,092 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:02:12,372 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 378570736 Bytes (852492288)
+2021-12-22 14:02:14,744 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 424647080 Bytes (852492288)
+2021-12-22 14:02:15,145 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 470106424 Bytes (852492288)
+2021-12-22 14:02:15,708 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:02:15,709 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:02:15,709 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:02:15,709 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:02:15,710 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 14:02:15,710 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:02:15,711 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:02:15,719 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:02:15,719 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:02:15,719 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:02:15,719 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:02:15,720 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:02:15,720 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:02:15,720 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:02:15,720 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:02:15,720 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:02:15,720 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:02:15,720 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:02:15,720 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:02:15,721 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:02:15,721 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:02:15,721 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 14:02:15,721 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 14:02:15,721 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 14:02:15,721 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 14:02:15,721 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:02:15,721 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:02:15,721 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:02:15,722 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:02:15,722 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 14:02:15,722 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 14:02:15,722 [INFO] Argument:294 - Argument : FIFOThresholdvalue: null
+2021-12-22 14:02:15,722 [INFO] Argument:304 - Argument : FIFOThresholdvalue: null
+2021-12-22 14:02:15,722 [INFO] Argument:294 - Argument : MemBurstvalue: null
+2021-12-22 14:02:15,722 [INFO] Argument:304 - Argument : MemBurstvalue: null
+2021-12-22 14:02:15,722 [INFO] Argument:294 - Argument : PeriphBurstvalue: null
+2021-12-22 14:02:15,722 [INFO] Argument:304 - Argument : PeriphBurstvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:02:15,723 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:02:15,724 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:02:15,725 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:02:15,726 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:02:15,726 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:02:15,727 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:02:15,727 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:02:15,727 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:02:15,727 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:02:15,727 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:02:15,727 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:02:15,727 [INFO] Argument:294 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:02:15,727 [INFO] Argument:304 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:02:15,727 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:02:15,728 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:02:15,728 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:02:15,728 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:02:15,728 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:02:15,728 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:02:15,728 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:02:15,728 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:02:15,728 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:02:15,728 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:02:15,729 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:02:15,729 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:02:15,729 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:02:15,729 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:02:15,729 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:02:15,729 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:02:15,729 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:02:15,729 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:02:15,729 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:02:15,729 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:02:15,730 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:02:15,730 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:02:15,731 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:02:16,511 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:02:16,613 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:02:16,655 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:02:16,790 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:02:17,187 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 14:02:17,315 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 14:02:17,320 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 14:02:17,409 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 14:02:17,445 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:02:17,595 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:02:17,604 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:02:17,721 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:02:17,755 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:02:17,942 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:02:17,947 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:02:18,047 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:02:18,073 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:02:18,216 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:02:18,314 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:02:18,434 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:02:18,451 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:02:18,643 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:02:20,696 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 445mS.
+2021-12-22 14:02:20,702 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:02:21,832 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:02:25,023 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4321mS.
+2021-12-22 14:02:25,025 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:02:25,034 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:27:54,512 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:27:54,513 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:27:54,514 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:28:00,274 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:28:06,667 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:28:17,201 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 548085496 Bytes (890241024)
+2021-12-22 14:28:18,785 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 591603448 Bytes (890241024)
+2021-12-22 14:28:21,533 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 474666288 Bytes (890241024)
+2021-12-22 14:28:22,314 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:28:22,314 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:28:22,314 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:28:22,314 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:28:22,314 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 14:28:22,315 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:28:22,316 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:28:22,323 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:28:22,324 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:22,324 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:28:22,324 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:28:22,324 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:28:22,324 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:22,324 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:28:22,325 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:28:22,325 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:28:22,325 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:28:22,325 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:22,325 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:22,325 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:22,325 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:22,325 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 14:28:22,326 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-12-22 14:28:22,326 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 14:28:22,326 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-12-22 14:28:22,326 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:22,326 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:22,326 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:22,326 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:22,327 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 14:28:22,327 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-22 14:28:22,327 [INFO] Argument:294 - Argument : FIFOThresholdvalue: null
+2021-12-22 14:28:22,327 [INFO] Argument:304 - Argument : FIFOThresholdvalue: null
+2021-12-22 14:28:22,327 [INFO] Argument:294 - Argument : MemBurstvalue: null
+2021-12-22 14:28:22,327 [INFO] Argument:304 - Argument : MemBurstvalue: null
+2021-12-22 14:28:22,327 [INFO] Argument:294 - Argument : PeriphBurstvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:304 - Argument : PeriphBurstvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:22,328 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:22,329 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:22,332 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:28:22,332 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:22,332 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:28:22,332 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:28:22,333 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:28:22,333 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:22,333 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:28:22,333 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:28:22,333 [INFO] Argument:294 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:28:22,333 [INFO] Argument:304 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:28:22,333 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:22,333 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:22,334 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:22,334 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:22,334 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:22,334 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:22,334 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:22,334 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:22,334 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:22,334 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:22,334 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:22,334 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:22,335 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:22,335 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:22,335 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:22,335 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:22,335 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:22,335 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:22,335 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:22,335 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:22,335 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:28:22,335 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:22,336 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:22,337 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:22,337 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:22,337 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:22,832 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:28:22,934 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:28:22,975 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:28:23,086 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:28:23,605 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 14:28:23,699 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 14:28:23,703 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 14:28:23,778 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 14:28:23,808 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:28:23,944 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:28:23,952 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:28:24,059 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:28:24,088 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:28:24,273 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:28:24,280 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:28:24,366 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:28:24,395 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:28:24,541 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:28:24,635 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:28:24,760 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:28:24,777 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:28:25,100 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:28:26,795 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 352mS.
+2021-12-22 14:28:26,802 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:28:27,879 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:28:31,835 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 5033mS.
+2021-12-22 14:28:31,836 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:28:31,846 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:28:57,720 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 431695456 Bytes (910163968)
+2021-12-22 14:28:58,247 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:28:58,247 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:28:58,247 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:28:58,247 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:28:58,247 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 14:28:58,248 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:28:58,249 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:28:58,262 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:28:58,262 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:58,262 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:28:58,263 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:28:58,263 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:28:58,263 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:58,263 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:28:58,263 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:28:58,263 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:28:58,263 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:28:58,263 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:58,263 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:58,264 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:58,264 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:58,264 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:58,264 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:58,264 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:58,264 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:58,264 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:58,264 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:58,264 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:58,265 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:58,265 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:58,265 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:58,265 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:58,265 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:58,265 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:58,265 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:58,265 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:58,265 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:58,266 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:58,266 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:58,267 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:58,270 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:28:58,271 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:58,271 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:28:58,271 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:28:58,271 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:28:58,271 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:28:58,271 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:28:58,271 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:28:58,271 [INFO] Argument:294 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:28:58,272 [INFO] Argument:304 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:28:58,272 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:58,272 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:28:58,272 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:58,272 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:28:58,273 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:58,273 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:28:58,273 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:58,273 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:28:58,273 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:58,274 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:28:58,274 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:58,274 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:28:58,274 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:58,274 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:28:58,274 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:58,275 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:28:58,275 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:58,275 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:28:58,275 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:58,275 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:28:58,275 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:28:58,275 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:58,276 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:58,277 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:28:59,141 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:28:59,350 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:28:59,405 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:28:59,560 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:28:59,949 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 14:29:00,080 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 14:29:00,084 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 14:29:00,181 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 14:29:00,219 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:29:00,411 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:29:00,419 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:29:00,544 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:29:00,572 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:29:00,777 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:29:00,783 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:29:00,865 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:29:00,888 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:29:01,027 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:29:01,119 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:29:01,234 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:29:01,249 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:29:01,431 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:29:03,001 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 352mS.
+2021-12-22 14:29:03,008 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:29:04,113 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:29:07,767 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4759mS.
+2021-12-22 14:29:07,768 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:29:07,777 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:29:31,463 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 489758568 Bytes (965738496)
+2021-12-22 14:29:31,924 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:29:31,925 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:29:31,925 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:29:31,925 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:29:31,925 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 14:29:31,926 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:29:31,927 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:29:31,934 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:29:31,934 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:29:31,934 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:29:31,934 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream3
+2021-12-22 14:29:31,934 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:29:31,934 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:29:31,935 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:29:31,935 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_3
+2021-12-22 14:29:31,935 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:29:31,935 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-22 14:29:31,935 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:29:31,935 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:29:31,935 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:29:31,935 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:29:31,935 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:29:31,935 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:29:31,936 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:29:31,936 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:29:31,936 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:29:31,936 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:29:31,936 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:29:31,936 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:29:31,936 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:29:31,936 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:29:31,936 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:29:31,936 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:29:31,937 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:29:31,937 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:29:31,937 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:29:31,938 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:29:31,938 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:29:31,938 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:29:31,938 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:29:31,939 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:29:31,939 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:29:31,939 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:29:31,939 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:29:31,939 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:29:31,942 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-22 14:29:31,942 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:29:31,942 [INFO] Argument:294 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:29:31,942 [INFO] Argument:304 - Argument : Instancevalue: DMA1_Stream4
+2021-12-22 14:29:31,942 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-22 14:29:31,943 [INFO] Argument:296 - 	 sub Args: 
+2021-12-22 14:29:31,943 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:29:31,943 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-22 14:29:31,943 [INFO] Argument:294 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:29:31,943 [INFO] Argument:304 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-12-22 14:29:31,943 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:29:31,943 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-22 14:29:31,943 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:29:31,943 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-22 14:29:31,943 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:29:31,944 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-22 14:29:31,944 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:29:31,944 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-22 14:29:31,944 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:29:31,944 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-22 14:29:31,944 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:29:31,944 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-22 14:29:31,944 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:29:31,944 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2021-12-22 14:29:31,944 [INFO] Argument:294 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2021-12-22 14:29:31,945 [INFO] Argument:294 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : MemBurstvalue: DMA_MBURST_SINGLE
+2021-12-22 14:29:31,945 [INFO] Argument:294 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2021-12-22 14:29:31,945 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-22 14:29:31,945 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-22 14:29:31,945 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-22 14:29:31,945 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-22 14:29:31,946 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-22 14:29:32,769 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:29:32,880 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:29:32,923 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:29:33,034 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:29:33,422 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 14:29:33,514 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 14:29:33,519 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 14:29:33,595 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 14:29:33,626 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:29:33,768 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:29:33,777 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:29:33,890 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:29:33,921 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:29:34,085 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:29:34,091 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:29:34,183 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:29:34,213 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:29:34,418 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:29:34,522 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:29:34,623 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:29:34,638 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:29:34,925 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:29:36,585 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 388mS.
+2021-12-22 14:29:36,591 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:29:37,818 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:29:41,007 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4416mS.
+2021-12-22 14:29:41,009 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:29:41,019 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:32:00,736 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:32:00,736 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:32:00,737 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:32:05,625 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,551x315,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:32:12,021 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 386236248 Bytes (997195776)
+2021-12-22 14:32:13,398 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 431851352 Bytes (997195776)
+2021-12-22 14:32:14,379 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 528320344 Bytes (997195776)
+2021-12-22 14:32:15,230 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:32:15,231 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:32:15,231 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:32:15,231 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:32:15,231 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:32:15,233 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:32:15,780 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:32:15,880 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:32:15,919 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:32:16,058 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:32:16,227 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:32:16,443 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:32:16,451 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:32:16,582 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:32:16,610 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:32:16,777 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:32:16,782 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:32:16,856 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:32:16,881 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:32:17,015 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:32:17,308 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:32:17,426 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:32:17,444 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:32:17,624 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:32:19,263 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 349mS.
+2021-12-22 14:32:19,270 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:32:20,409 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:32:23,362 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4092mS.
+2021-12-22 14:32:23,364 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:32:23,373 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:37:39,796 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:37:39,797 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:37:39,798 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:37:42,026 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 494185264 Bytes (1004535808)
+2021-12-22 14:37:43,481 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 536650544 Bytes (1004535808)
+2021-12-22 14:37:46,940 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 663006000 Bytes (1004535808)
+2021-12-22 14:37:47,674 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:37:47,674 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:37:47,674 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:37:47,674 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:37:47,675 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:37:47,676 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:37:48,310 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:37:48,409 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:37:48,444 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:37:48,550 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:37:48,658 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:37:48,791 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:37:48,798 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:37:48,913 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:37:48,944 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:37:49,122 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:37:49,129 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:37:49,226 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:37:49,252 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:37:49,409 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:37:49,503 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:37:49,627 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:37:49,641 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:37:49,826 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:37:51,763 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 393mS.
+2021-12-22 14:37:51,769 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:37:52,868 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:37:55,812 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4043mS.
+2021-12-22 14:37:55,813 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:37:55,819 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:41:06,860 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:41:06,861 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:41:06,861 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 14:41:07,147 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:41:07,148 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:41:07,148 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 14:41:07,365 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:41:07,365 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:41:07,366 [INFO] I2sManager:520 - AudioClock : 96774Divider : 15Odd : 1
+2021-12-22 14:52:30,606 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:30,606 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:30,776 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:30,777 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:31,693 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:31,693 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:31,694 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:31,835 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:31,836 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:31,837 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:32,002 [INFO] Gpio:254 - dependency for GPIO [I2S2, RCC]
+2021-12-22 14:52:32,704 [INFO] Gpio:254 - dependency for GPIO [I2S2, RCC]
+2021-12-22 14:52:32,966 [INFO] Gpio:254 - dependency for GPIO [I2S2, RCC]
+2021-12-22 14:52:33,033 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:33,034 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:33,035 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:33,731 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:33,731 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:33,840 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:33,840 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:41,169 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:41,170 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:41,259 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:41,259 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:42,036 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:42,037 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:42,038 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:42,230 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:42,230 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:42,231 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:42,508 [INFO] Gpio:254 - dependency for GPIO [I2S2, RCC]
+2021-12-22 14:52:45,160 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:45,161 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:45,161 [INFO] I2sManager:520 - AudioClock : 7978Divider : 47Odd : 0
+2021-12-22 14:52:53,307 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:52:53,371 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:52:53,371 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:52:53,372 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:52:53,505 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:52:55,336 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:52:55,419 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:53:14,251 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:53:14,251 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:53:14,252 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 14:53:23,703 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:53:27,362 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:53:34,878 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:53:37,729 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-22 14:53:43,114 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 531051880 Bytes (1009778688)
+2021-12-22 14:53:44,758 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 578371864 Bytes (1009778688)
+2021-12-22 14:53:45,666 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 633879576 Bytes (1009778688)
+2021-12-22 14:53:46,432 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2S
+2021-12-22 14:53:46,432 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-22 14:53:46,433 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-22 14:53:46,433 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-22 14:53:46,433 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-22 14:53:46,433 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-22 14:53:46,434 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-22 14:53:47,054 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp_save
+2021-12-22 14:53:47,136 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\license.tmp
+2021-12-22 14:53:47,170 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp_save
+2021-12-22 14:53:47,268 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\gpio.tmp
+2021-12-22 14:53:47,539 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp_save
+2021-12-22 14:53:47,633 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma.tmp
+2021-12-22 14:53:47,638 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp_save
+2021-12-22 14:53:47,724 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\dma_GV.tmp
+2021-12-22 14:53:47,756 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c_save
+2021-12-22 14:53:47,898 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_it.c
+2021-12-22 14:53:47,906 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h_save
+2021-12-22 14:53:48,011 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_it.h
+2021-12-22 14:53:48,043 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-22 14:53:48,220 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\stm32f4xx_hal_msp.c
+2021-12-22 14:53:48,225 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp_save
+2021-12-22 14:53:48,314 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\MXTmpFiles\system.tmp
+2021-12-22 14:53:48,341 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-22 14:53:48,485 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-22 14:53:48,573 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h_save
+2021-12-22 14:53:48,680 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Inc\main.h
+2021-12-22 14:53:48,698 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c_save
+2021-12-22 14:53:49,108 [INFO] CodeEngine:257 - Generated code: C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\STM32_AUDIO\Core\Src\main.c
+2021-12-22 14:53:50,814 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 362mS.
+2021-12-22 14:53:50,820 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-22 14:53:51,365 [INFO] ConfigFileManager:1273 - The Die is : DIE413
+2021-12-22 14:53:55,659 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4839mS.
+2021-12-22 14:53:55,660 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-22 14:53:55,669 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-22 14:59:52,993 [INFO] I2sManager:626 - 1.92E8
+2021-12-22 14:59:52,993 [INFO] I2sManager:179 - I2S Clock Value : 1.92E8
+2021-12-22 14:59:52,993 [INFO] I2sManager:520 - AudioClock : 93750Divider : 4Odd : 0
+2021-12-22 15:01:43,888 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,551x208,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
