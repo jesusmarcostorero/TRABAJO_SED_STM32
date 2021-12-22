@@ -1,0 +1,10 @@
+00:29:39 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
+make -j4 all 
+arm-none-eabi-size   Trabajo_sed_STM32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10600	     20	   1924	  12544	   3100	Trabajo_sed_STM32.elf
+Finished building: default.size.stdout
+ 
+
+00:29:39 Build Finished. 0 errors, 0 warnings. (took 471ms)
+
