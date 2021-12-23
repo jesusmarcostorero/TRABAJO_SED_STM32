@@ -1,3 +1,4 @@
-l_buffer
-r_buffer
-medida
+bufferTx
+bufferRx
+senal_mono
+senal_led

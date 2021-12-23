@@ -1,49 +1,31 @@
-15:23:17 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
+23:31:32 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32_DIGITAL ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:160:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-  160 |   HAL_ADC_Start_DMA(&hadc1, l_buffer, 4);
-      |                             ^~~~~~~~
-      |                             |
-      |                             uint8_t * {aka unsigned char *}
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:295,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:595:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-  595 | HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
-      |                                                              ~~~~~~~~~~^~~~~
-../Core/Src/main.c:161:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-  161 |   HAL_ADC_Start_DMA(&hadc2, r_buffer, 4);
-      |                             ^~~~~~~~
-      |                             |
-      |                             uint8_t * {aka unsigned char *}
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:295,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:595:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-  595 | HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
-      |                                                              ~~~~~~~~~~^~~~~
-arm-none-eabi-gcc -o "Trabajo_sed_STM32.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\Trabajo_sed_STM32\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Trabajo_sed_STM32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Trabajo_sed_STM32.elf
+arm-none-eabi-gcc -o "Trabajo_sed_STM32_DIGITAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\Trabajo_sed_STM32_DIGITAL\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Trabajo_sed_STM32_DIGITAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Trabajo_sed_STM32_DIGITAL.elf
  
-arm-none-eabi-size   Trabajo_sed_STM32.elf 
-arm-none-eabi-objdump -h -S  Trabajo_sed_STM32.elf  > "Trabajo_sed_STM32.list"
-arm-none-eabi-objcopy  -O binary  Trabajo_sed_STM32.elf  "Trabajo_sed_STM32.bin"
+arm-none-eabi-size   Trabajo_sed_STM32_DIGITAL.elf 
+arm-none-eabi-objdump -h -S  Trabajo_sed_STM32_DIGITAL.elf  > "Trabajo_sed_STM32_DIGITAL.list"
+arm-none-eabi-objcopy  -O binary  Trabajo_sed_STM32_DIGITAL.elf  "Trabajo_sed_STM32_DIGITAL.bin"
    text	   data	    bss	    dec	    hex	filename
-  10584	     20	   1924	  12528	   30f0	Trabajo_sed_STM32.elf
+  15772	     20	   2004	  17796	   4584	Trabajo_sed_STM32_DIGITAL.elf
 Finished building: default.size.stdout
  
-Finished building: Trabajo_sed_STM32.bin
+Finished building: Trabajo_sed_STM32_DIGITAL.bin
  
-Finished building: Trabajo_sed_STM32.list
+Finished building: Trabajo_sed_STM32_DIGITAL.list
  
-15:23:21 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
+23:31:42 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32_DIGITAL ****
 make -j4 all 
-arm-none-eabi-size   Trabajo_sed_STM32.elf 
+arm-none-eabi-size   Trabajo_sed_STM32_DIGITAL.elf 
    text	   data	    bss	    dec	    hex	filename
-  10584	     20	   1924	  12528	   30f0	Trabajo_sed_STM32.elf
+  15772	     20	   2004	  17796	   4584	Trabajo_sed_STM32_DIGITAL.elf
+Finished building: default.size.stdout
+ 
+23:33:39 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32_DIGITAL ****
+make -j4 all 
+arm-none-eabi-size   Trabajo_sed_STM32_DIGITAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15772	     20	   2004	  17796	   4584	Trabajo_sed_STM32_DIGITAL.elf
 Finished building: default.size.stdout
  

@@ -22,8 +22,8 @@ BluetoothA2DPSink a2dp_sink;
 
 void setup() {
   // you could also do this also with your own i2s config. But this is simpler
-  a2dp_sink.set_bits_per_sample(24); //para la stm 
-  a2dp_sink.start("BT_ESP32_Jesus"); //aqui se introduce el nombre del dispositivo 
+  a2dp_sink.set_bits_per_sample(16); //para la stm 
+  a2dp_sink.start("ESP32_Receptor_BT"); //aqui se introduce el nombre del dispositivo 
 }
 
 
