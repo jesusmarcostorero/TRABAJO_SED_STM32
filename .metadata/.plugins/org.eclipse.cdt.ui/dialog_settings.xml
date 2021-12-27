@@ -21,4 +21,12 @@
 		<item key="width" value="565"/>
 		<item key="height" value="681"/>
 	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="I2SEx_TxRxDMACplt"/>
+			<item value="I2S_DMATxCplt"/>
+		</list>
+	</section>
 </section>
