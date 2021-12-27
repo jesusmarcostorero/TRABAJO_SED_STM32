@@ -236,8 +236,10 @@ static void MX_GPIO_Init(void)
 void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s){
 
 	uint16_t canal_l = bufferRx[0];
-	uint16_t canal_r = bufferTx[1];
+	uint16_t canal_r = bufferRx[1];
 
+	bufferTx[0] = bufferRx[0];
+	bufferTx[1] = bufferRx[1];
 	//conversion a mono
 	canal_l = canal_l >> 1;//dividir por dos la energia de la señal
 	canal_r = canal_r >> 1;
@@ -247,7 +249,10 @@ void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s){
 void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s){
 
 	uint16_t canal_l = bufferRx[2];
-	uint16_t canal_r = bufferTx[3];
+	uint16_t canal_r = bufferRx[3];
+
+	bufferTx[2] = bufferRx[2];
+	bufferTx[3] = bufferRx[3];
 	//conversion a mono
 	canal_l = canal_l >> 1;//dividir por dos la energia de la señal
 	canal_r = canal_r >> 1;
