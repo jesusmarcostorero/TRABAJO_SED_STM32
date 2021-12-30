@@ -17756,3 +17756,35 @@
 2021-12-30 15:46:53,798 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 4762mS.
 2021-12-30 15:46:53,799 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
 2021-12-30 15:46:53,808 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2021-12-30 16:24:24,360 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,361 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,361 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,362 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,362 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,362 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,362 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,363 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,363 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,363 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,363 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,363 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,364 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,364 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,364 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,364 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,364 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,365 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,365 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,365 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,365 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,365 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,366 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,366 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,366 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,366 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,366 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,367 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,367 [INFO] ADCParametersView:103 -                Rank 2 : false
+2021-12-30 16:24:24,460 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,461 [INFO] ADCParametersView:103 -                Rank 1 : false
+2021-12-30 16:24:24,461 [INFO] ADCParametersView:103 -                Rank 2 : false

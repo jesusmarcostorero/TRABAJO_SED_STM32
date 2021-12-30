@@ -101,6 +101,7 @@ float a2_pa = -0.09534175821687875;
 float b1_pa = -1.7891079133475518;
 float b2_pa = 0.8093164835662425;
 
+//filtros para audio
 int filtro_l(int muestra){
 
 	//formula del filtro
@@ -129,6 +130,7 @@ int filtro_r(int muestra){
 	return (int) muestra_out;
 }
 
+//filtro paso bajo (led rojo)
 int filtro_pb(int muestra){
 
 	//formula del filtro
@@ -143,6 +145,8 @@ int filtro_pb(int muestra){
 	return (int) muestra_out;
 }
 
+
+//filtro paso alto (led azul)
 int filtro_pa(int muestra){
 
 	//formula del filtro
@@ -553,14 +557,10 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef *AdcHandle){
-
-}
-
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 
-	int muestra_l = buffer_in[0];
-	int muestra_r = buffer_in[1];
+	int muestra_l = buffer_in[0];//canal l
+	int muestra_r = buffer_in[1];//canal r
 	senal_mono = (buffer_in[0] >> 1) + (buffer_in[1] >> 1) - 141;
 
 	//tratamiento de señal para las luces
@@ -578,6 +578,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	//filtro para el audio
 	muestra_l = filtro_l(muestra_l) - 141;
 	muestra_r = filtro_r(muestra_r) - 141;
+
+	muestra_l = filtro_pa(senal_mono);
+	muestra_r = muestra_l;
 	//agrandar la señal 3 bits
 	muestra_l *= 8;
 	muestra_r *= 8;
@@ -593,6 +596,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, duty_cycle_1);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, duty_cycle_2);
 	//si se quiere visualizar la señal anlogica de los leds
+
 	//HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, led_bajos);
 	//HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, led_agudos);
 
