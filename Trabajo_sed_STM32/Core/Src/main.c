@@ -61,11 +61,58 @@ static void MX_DAC_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
 /* USER CODE BEGIN PFP */
-
+int debouncer(volatile int* button_int, GPIO_TypeDef* GPIO_port, uint16_t GPIO_number);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+volatile int flag = 0;
+volatile int aux = 0;
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if (GPIO_Pin == GPIO_PIN_0){
+		flag++;
+		if (flag > 2)
+			flag = 0;
+	}
+}
+/*
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if (debouncer(&aux, GPIOA, GPIO_PIN_0)){
+		flag++;
+		if (flag > 2)
+			flag = 0;
+	}
+}*/
+
+int debouncer(volatile int* button_int, GPIO_TypeDef* GPIO_port, uint16_t GPIO_number){
+	static uint8_t button_count=0;
+	static int counter=0;
+
+	if (*button_int==1){
+		if (button_count==0) {
+			counter=HAL_GetTick();
+			button_count++;
+		}
+		if (HAL_GetTick()-counter>=20){
+			counter=HAL_GetTick();
+			if (HAL_GPIO_ReadPin(GPIO_port, GPIO_number)!=1){
+				button_count=1;
+			}
+			else{
+				button_count++;
+			}
+			if (button_count==4){ //Periodo antirebotes
+				button_count=0;
+				*button_int=0;
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
 
 //uint8_t medida;
 volatile uint8_t buffer_in[2];
@@ -144,7 +191,6 @@ int filtro_pb(int muestra){
 	//devolver valor
 	return (int) muestra_out;
 }
-
 
 //filtro paso alto (led azul)
 int filtro_pa(int muestra){
@@ -297,7 +343,7 @@ static void MX_ADC1_Init(void)
   }
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = 1;
   sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
@@ -306,7 +352,7 @@ static void MX_ADC1_Init(void)
   }
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Channel = ADC_CHANNEL_3;
   sConfig.Rank = 2;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
@@ -548,10 +594,17 @@ static void MX_DMA_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 
@@ -566,6 +619,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	//tratamiento de señal para las luces
 	int temp_led_bajos = filtro_pb(senal_mono);
 	int temp_led_agudos = filtro_pa(senal_mono);
+
 	//elevar la señal al cuadrado
 	temp_led_bajos = temp_led_bajos * temp_led_bajos;
 	temp_led_agudos = temp_led_agudos * temp_led_agudos;
@@ -576,11 +630,22 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	led_agudos = temp_led_agudos;
 
 	//filtro para el audio
-	muestra_l = filtro_l(muestra_l) - 141;
-	muestra_r = filtro_r(muestra_r) - 141;
+	switch(flag){
+		case 0:
+			muestra_l = filtro_l(muestra_l) - 141;
+			muestra_r = filtro_r(muestra_r) - 141;
+			break;
+		case 1:
+			muestra_l = filtro_pa(senal_mono);
+			muestra_r = muestra_l;
+			break;
+		case 2:
+			muestra_l = filtro_pb(senal_mono);
+			muestra_r = muestra_l;
+			break;
+		default: break;
+	}
 
-	muestra_l = filtro_pa(senal_mono);
-	muestra_r = muestra_l;
 	//agrandar la señal 3 bits
 	muestra_l *= 8;
 	muestra_r *= 8;
