@@ -631,7 +631,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	temp_led_bajos = temp_led_bajos * temp_led_bajos;
 	temp_led_agudos = temp_led_agudos * temp_led_agudos;
 	temp_led_bajos *= 8;
-	temp_led_agudos *= 12;
+	temp_led_agudos *= 8;
 
 	led_bajos = temp_led_bajos;
 	led_agudos = temp_led_agudos;
@@ -653,8 +653,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	}
 
 	//agrandar la señal 3 bits
-	muestra_l *= 8;
-	muestra_r *= 8;
+	muestra_l *= 4;
+	muestra_r *= 4;
 	//colocar un poco de continua para que no tome valores negativos
 	muestra_l += 1024;
 	muestra_r += 1024;

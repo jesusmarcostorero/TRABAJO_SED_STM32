@@ -1,9 +1,9 @@
-18:18:12 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
+18:30:29 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:254:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-  254 |   HAL_ADC_Start_DMA(&hadc1, buffer_in, 2);
+../Core/Src/main.c:252:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  252 |   HAL_ADC_Start_DMA(&hadc1, buffer_in, 2);
       |                             ^~~~~~~~~
       |                             |
       |                             volatile uint8_t * {aka volatile unsigned char *}
@@ -21,7 +21,7 @@ arm-none-eabi-size   Trabajo_sed_STM32.elf
 arm-none-eabi-objdump -h -S  Trabajo_sed_STM32.elf  > "Trabajo_sed_STM32.list"
 arm-none-eabi-objcopy  -O binary  Trabajo_sed_STM32.elf  "Trabajo_sed_STM32.bin"
    text	   data	    bss	    dec	    hex	filename
-  16844	     76	   2068	  18988	   4a2c	Trabajo_sed_STM32.elf
+  16836	     76	   2068	  18980	   4a24	Trabajo_sed_STM32.elf
 Finished building: default.size.stdout
  
 Finished building: Trabajo_sed_STM32.bin
@@ -29,5 +29,5 @@ Finished building: Trabajo_sed_STM32.bin
 Finished building: Trabajo_sed_STM32.list
  
 
-18:18:15 Build Finished. 0 errors, 1 warnings. (took 2s.896ms)
+18:30:31 Build Finished. 0 errors, 1 warnings. (took 2s.145ms)
 
