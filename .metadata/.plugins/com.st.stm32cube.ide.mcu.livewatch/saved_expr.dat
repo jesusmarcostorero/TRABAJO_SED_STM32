@@ -1,4 +1,4 @@
-bufferTx
-bufferRx
-senal_mono
-senal_led
+buffer_l
+buffer_r
+muestra_l
+muestra_r

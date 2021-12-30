@@ -1,10 +1,33 @@
-15:23:21 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
+15:47:58 **** Incremental Build of configuration Debug for project Trabajo_sed_STM32 ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:199:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  199 |   HAL_ADC_Start_DMA(&hadc1, buffer_in, 2);
+      |                             ^~~~~~~~~
+      |                             |
+      |                             volatile uint8_t * {aka volatile unsigned char *}
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:295,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:595:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  595 | HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
+      |                                                              ~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "Trabajo_sed_STM32.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\Trabajo_sed_STM32\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Trabajo_sed_STM32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Trabajo_sed_STM32.elf
+ 
 arm-none-eabi-size   Trabajo_sed_STM32.elf 
+arm-none-eabi-objdump -h -S  Trabajo_sed_STM32.elf  > "Trabajo_sed_STM32.list"
+arm-none-eabi-objcopy  -O binary  Trabajo_sed_STM32.elf  "Trabajo_sed_STM32.bin"
    text	   data	    bss	    dec	    hex	filename
-  10584	     20	   1924	  12528	   30f0	Trabajo_sed_STM32.elf
+  16588	     76	   2068	  18732	   492c	Trabajo_sed_STM32.elf
 Finished building: default.size.stdout
  
+Finished building: Trabajo_sed_STM32.bin
+ 
+Finished building: Trabajo_sed_STM32.list
+ 
 
-15:23:22 Build Finished. 0 errors, 0 warnings. (took 639ms)
+15:48:00 Build Finished. 0 errors, 1 warnings. (took 2s.310ms)
 
