@@ -2170,3 +2170,22 @@ and then try again.
 java.lang.Exception: Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1014)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:843)
+!SESSION 2021-12-30 18:00:09.882 -----------------------------------------------
+eclipse.buildId=Version 1.8.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\Trabajo_sed_STM32\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\Trabajo_sed_STM32\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-12-30 18:00:23.064
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-12-30 18:00:23.202
+!MESSAGE Log4j initialized with config file C:\Users\jesus\Documents\UNI\Cuarto\1 Cuatri\SED\TrabajoSTM32\TRABAJO_SED_STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-12-30 18:00:38.636
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-30 18:00:58.520
+!MESSAGE Indexed 'Trabajo_sed_STM32' (26 sources, 104 headers) in 7.41 sec: 9,319 declarations; 49,095 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.25%)
