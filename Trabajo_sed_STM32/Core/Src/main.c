@@ -652,7 +652,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 			break;
 	}
 
-	//agrandar la señal 3 bits
+	//agrandar la señal a 3 bits
 	muestra_l *= 4;
 	muestra_r *= 4;
 	//colocar un poco de continua para que no tome valores negativos
