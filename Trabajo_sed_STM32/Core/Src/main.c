@@ -156,7 +156,7 @@ int filtro_l(int muestra){
 
 	//formula del filtro
 	float muestra_in = (float) muestra;
-	float muestra_out = muestra_in + a1 * lx_1 + a2 * lx_2 - b1 * ly_1 - b2 * ly_2;
+	float muestra_out = a0 * muestra_in + a1 * lx_1 + a2 * lx_2 - b1 * ly_1 - b2 * ly_2;
 	//mover valores un puesto
 	lx_2 = lx_1;
 	lx_1 = muestra_in;
@@ -601,13 +601,30 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_14, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PD12 PD14 */
+  GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_14;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PD13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
@@ -630,8 +647,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	//elevar la señal al cuadrado
 	temp_led_bajos = temp_led_bajos * temp_led_bajos;
 	temp_led_agudos = temp_led_agudos * temp_led_agudos;
-	temp_led_bajos *= 8;
-	temp_led_agudos *= 8;
+	//temp_led_bajos *= 4;
+	//temp_led_agudos *= 4;
 
 	led_bajos = temp_led_bajos;
 	led_agudos = temp_led_agudos;
@@ -641,14 +658,23 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 		case 0:
 			muestra_l = filtro_l(muestra_l) - 141;
 			muestra_r = filtro_r(muestra_r) - 141;
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, 1);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, 0);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 0);
 			break;
 		case 1:
 			muestra_l = filtro_pb(senal_mono);
 			muestra_r = muestra_l;
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, 0);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, 1);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 0);
 			break;
 		case 2:
 			muestra_l = filtro_pa(senal_mono);
 			muestra_r = muestra_l;
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, 0);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, 0);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 1);
 			break;
 	}
 
@@ -662,8 +688,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, muestra_l);
 	HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, muestra_r);
 
-	duty_cycle_1 = (100 * led_bajos) / 4096;
-    duty_cycle_2 = (100 * led_agudos) / 4096;
+	duty_cycle_1 = (100 * led_bajos) / 2048;
+    duty_cycle_2 = (100 * led_agudos) / 2048;
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, duty_cycle_1);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, duty_cycle_2);
 	//si se quiere visualizar la señal anlogica de los leds

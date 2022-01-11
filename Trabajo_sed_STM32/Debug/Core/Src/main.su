@@ -13,5 +13,5 @@ main.c:464:13:MX_TIM3_Init	64	static
 main.c:523:13:MX_TIM4_Init	64	static
 main.c:580:13:MX_DMA_Init	16	static
 main.c:598:13:MX_GPIO_Init	40	static
-main.c:620:6:HAL_ADC_ConvCpltCallback	32	static
-main.c:681:6:Error_Handler	4	static,ignoring_inline_asm
+main.c:637:6:HAL_ADC_ConvCpltCallback	32	static
+main.c:707:6:Error_Handler	4	static,ignoring_inline_asm
