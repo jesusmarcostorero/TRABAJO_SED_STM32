@@ -605,7 +605,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_14, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
@@ -613,17 +613,11 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PD12 PD14 */
-  GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_14;
+  /*Configure GPIO pins : PD12 PD13 PD14 */
+  GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PD13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
@@ -688,7 +682,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 	HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, muestra_l);
 	HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, muestra_r);
 
-	duty_cycle_1 = (100 * led_bajos) / 2048;
+	duty_cycle_1 = (100 * led_bajos) / 2048; // pondera la señal del 0 al 100
     duty_cycle_2 = (100 * led_agudos) / 2048;
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, duty_cycle_1);
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, duty_cycle_2);
