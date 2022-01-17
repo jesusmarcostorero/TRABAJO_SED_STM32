@@ -43,6 +43,7 @@ DMA_HandleTypeDef hdma_adc1;
 
 DAC_HandleTypeDef hdac;
 
+TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
@@ -60,61 +61,22 @@ static void MX_TIM2_Init(void);
 static void MX_DAC_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
+static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
-int debouncer(volatile int* button_int, GPIO_TypeDef* GPIO_port, uint16_t GPIO_number);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-volatile int flag = 0;
-volatile int aux = 0;
-
+volatile int flag=0;
+volatile int state=1;
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if (GPIO_Pin == GPIO_PIN_0){
-		flag++;
-		if (flag > 2)
-			flag = 0;
+	if(GPIO_Pin == GPIO_PIN_0 && state == 1){
+		HAL_TIM_Base_Start_IT(&htim1);
+		state = 0;
 	}
-}
-
-/*
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-	if (debouncer(&aux, GPIOA, GPIO_PIN_0)){
-		flag++;
-		if (flag > 2)
-			flag = 0;
-	}
-}
-*/
-
-int debouncer(volatile int* button_int, GPIO_TypeDef* GPIO_port, uint16_t GPIO_number){
-	static uint8_t button_count=0;
-	static int counter=0;
-
-	if (*button_int==1){
-		if (button_count==0) {
-			counter=HAL_GetTick();
-			button_count++;
-		}
-		if (HAL_GetTick()-counter>=20){
-			counter=HAL_GetTick();
-			if (HAL_GPIO_ReadPin(GPIO_port, GPIO_number)!=1){
-				button_count=1;
-			}
-			else{
-				button_count++;
-			}
-			if (button_count==4){ //Periodo antirebotes
-				button_count=0;
-				*button_int=0;
-				return 1;
-			}
-		}
-	}
-	return 0;
 }
 
 //uint8_t medida;
@@ -245,6 +207,7 @@ int main(void)
   MX_DAC_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
@@ -408,6 +371,52 @@ static void MX_DAC_Init(void)
   /* USER CODE BEGIN DAC_Init 2 */
 
   /* USER CODE END DAC_Init 2 */
+
+}
+
+/**
+  * @brief TIM1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM1_Init(void)
+{
+
+  /* USER CODE BEGIN TIM1_Init 0 */
+
+  /* USER CODE END TIM1_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM1_Init 1 */
+
+  /* USER CODE END TIM1_Init 1 */
+  htim1.Instance = TIM1;
+  htim1.Init.Prescaler = 16800;
+  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim1.Init.Period = 500;
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim1.Init.RepetitionCounter = 0;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM1_Init 2 */
+
+  /* USER CODE END TIM1_Init 2 */
 
 }
 
@@ -627,6 +636,19 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if(htim->Instance == TIM1){
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+			flag++;
+			if (flag > 2){
+				flag = 0;
+			}
+			state = 1;
+			HAL_TIM_Base_Stop_IT(&htim1);
+		}
+	}
+}
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle){
 
